@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fronted 2 Contest 2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--
+        header
+    -->
+    <header>
+      <nav>
+        <ul>
+          <li class="nav-img">
+            <img
+              id="drawerBtn"
+              class="menu drawer-icon"
+              src="./assest/menu.svg"
+            />
+            <img src="./assest/Cookpal 1.svg" />
+          </li>
+          <li class="nav-link">
+            <div class="home">Home</div>
+            <div>Explore</div>
+            <div>Help</div>
+            <div><img src="./assest/Ellipse 2.svg" /></div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="drawer">
+      
+      <ul>
+        <li class="nav-link mobile">
+          <div class="home">Home</div>
+          <div>Explore</div>
+          <div>Help</div>
+        </li>
+      </ul>
+      
+    </div>
+    <section class="hero">
+      <img src="./assest/Rectangle 20.svg" />
+    </section>
+    <section id="section">
+      <div>
+        <p id="reci">Search For Recipes</p>
+        <div class="searchbar">
+          <div>
+            <img class="s1" src="./assest/search 1.svg" />
+            <input type="text" id="searchInput" placeholder="Search by name" />
+          </div>
+          <img class="s2" src="./assest/li_search2.svg" />
+        </div>
+      </div>
+      <div id="toggle">
+        <button onclick="showAllRecipes()" class="btn">
+          All Recipes <img src="./assest/arrow.svg" />
+        </button>
+        <button onclick="showOnlyVeg()" class="btn sec">
+          Veg Recipes Only<img src="./assest/arrow.svg" />
+        </button>
+        <button onclick="showOnlyNonVeg()" class="btn third">
+          Non Veg Recipes<img src="./assest/arrow.svg" />
+        </button>
+      </div>
+      <div id="main-container">
+        <div id="ratingfilters">
+          <p class="filterheading">Filters</p>
+          <p class="ratingheading">Rating</p>
+          <label>
+            <div>
+              <input
+                type="radio"
+                name="ratingfilters"
+                value="above"
+                onchange="filterByRating()"
+              />
+              <p>4.5 and Above</p>
+            </div>
+          </label>
+          <label>
+            <div>
+              <input
+                type="radio"
+                name="ratingfilters"
+                value="below"
+                onchange="filterByRating()"
+              />
+              <p>below 4.5</p>
+            </div>
+          </label>
+        </div>
+        <div id="container"></div>
+      </div>
+    </section>
+    <section id="footer">
+      <footer>
+        <div class="col1">
+          <img src="./assest/Cookpal 1.svg" />
+          <p>
+            Cookpal is a recipe website with a wide variety of delicious
+            recipes, easy-to-use search function. Join our community and let's
+            cook together!
+          </p>
+        </div>
+        <div class="col2">
+          <b>Company</b>
+          <p>Home</p>
+          <p>Explore</p>
+          <p>Team</p>
+          <p>About us</p>
+          <p>Activity</p>
+        </div>
+        <div class="col3">
+          <b>Resources</b>
+          <p>Blog</p>
+          <p>Use Cases</p>
+          <p>Testimonials</p>
+          <p>Insights</p>
+        </div>
+        <div class="col4">
+          <img src="./assest/Cookpal 1.svg" />
+          <p>
+            Ut risus mattis interdum faucibus facilisi. Facilisi purus accumsan
+            aliquam.
+          </p>
+          <div class="email">
+            <input class="emailinput" type="text" placeholder="Your Email" />
+            <button class="sub">Subscribe</button>
+          </div>
+        </div>
+      </footer>
+      <div>
+        <img src="./assest/Instagram.svg" />
+        <img src="./assest/Twitter.svg" />
+        <img src="./assest/Linkedin.svg" />
+        <img src="./assest/Facebook.svg" />
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
